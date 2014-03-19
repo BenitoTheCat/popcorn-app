@@ -65,6 +65,7 @@ var Yts = Backbone.Collection.extend({
                         quality:    movie.Quality,
                         torrent:    movie.TorrentUrl,
                         torrents:   torrents,
+                        torrentMag: movie.TorrentMagnetUrl,
                         videos:     {},
                         subtitles:  {},
                         seeders:    movie.TorrentSeeds,

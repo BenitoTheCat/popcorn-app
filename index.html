@@ -120,7 +120,7 @@
                 <% if (typeof subtitles !== 'undefined') { %>
                   <li>
                     <% for (var i = 0, keys = _.keys(subtitles), l = keys.length; i < l; ++i) { %>
-                      <span class="flag flag-<%= keys[i] %>" title="<%= i18n.__(keys[i]) %>"></span>
+                      <a href="<%= subtitles[keys[i]] %>"><span class="flag flag-<%= keys[i] %>" title="<%= i18n.__(keys[i]) %>"></span></a>
                     <% } %>
                   </li>
                 <% } %>
@@ -130,6 +130,7 @@
 
             <% if (this.model.get('torrents')) { %>
               <a href="" class="p_tooltip play-button" disabled="disabled"><%= i18n.__('watchItNow') %></a>
+              <a href="<%= this.model.get('torrentMag')%>" class="p_tooltip download-button" disabled="disabled">Download movie</a>
             <% } %>
           </div>
         </div>

@@ -135,6 +135,21 @@ sidebar {
     background:#cc181e;
     &:hover { background: #eb282e; }
   }
+  a.download-button {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    background:#cc181e;
+    &:hover { background: #eb282e; }
+  }
 
     .movie-detail {
       height: 100%;
